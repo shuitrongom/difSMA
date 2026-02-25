@@ -229,7 +229,7 @@ h6,
 /*** Hero Header ***/
 .hero-header,
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/hero-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/piedepagina.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -607,6 +607,7 @@ h6,
 
 .team .team-item .team-content,
 .team .team-item .team-content h4,
+.team .team-item .team-content h5,
 .team .team-item .team-content p {
     transition: 0.5s;
 }
@@ -619,6 +620,10 @@ h6,
 .team .team-item:hover .team-content h4 {
     color: var(--bs-white) !important;
 }
+
+.team .team-item:hover .team-content h5 {
+    color: var(--bs-white) !important;
+
 
 .team .team-item:hover .team-content p {
     color: var(--bs-dark) !important;
@@ -651,6 +656,36 @@ h6,
 }
 
 .testimonial .testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--bs-secondary);
+}
+/*** testimonial End ***/
+
+/*** Notice Start ***/
+.testimonial .notice-carousel {
+    position: relative;
+    
+}
+
+.testimonial .notice-carousel .owl-dots {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .notice-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--bs-primary);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.testimonial .notice-carousel .owl-dot.active {
     width: 30px;
     background: var(--bs-secondary);
 }

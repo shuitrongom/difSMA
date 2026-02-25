@@ -610,6 +610,13 @@ progress {
     height: auto
 }
 
+.img-fluid-mid {
+    max-width: auto;
+    height: auto;
+    align-items: center
+
+}
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -7442,6 +7449,12 @@ fieldset:disabled .btn {
     width: auto !important
 }
 
+.w-auto-mid {
+    width: auto !important;
+    justify-content: center !important;
+    align-items: center;
+}
+
 .mw-100 {
     max-width: 100% !important
 }
@@ -8437,6 +8450,10 @@ fieldset:disabled .btn {
 
 .bg-white {
     background-color: #fff !important
+}
+
+.bg-whi {
+    background-color: #393d72 !important
 }
 
 .bg-transparent {
