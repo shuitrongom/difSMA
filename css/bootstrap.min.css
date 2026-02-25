@@ -7870,6 +7870,10 @@ fieldset:disabled .btn {
 }
 
 .mb-5 {
+    margin-bottom: 6rem !important
+}
+
+.mb-6 {
     margin-bottom: 3rem !important
 }
 
@@ -7900,6 +7904,19 @@ fieldset:disabled .btn {
 .ms-5 {
     margin-left: 3rem !important
 }
+
+.ms-6 {
+    margin-left: 16rem !important
+}
+
+.ms-7 {
+    margin-left: 32rem !important
+}
+
+.ms-center {
+    margin-left: center !important
+}
+
 
 .ms-auto {
     margin-left: auto !important
