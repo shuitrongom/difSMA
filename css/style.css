@@ -591,7 +591,14 @@ h6,
 
 .team .team-item .team-icon {
     position: absolute;
-    bottom: 120px;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .team-item .team-icon2 {
+    position: absolute;
+    bottom: 180px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -601,7 +608,16 @@ h6,
     transition: 0.5s;
 }
 
+.team .team-item .team-icon2 a.share-link {
+    opacity: 0;
+    transition: 0.5s;
+}
+
 .team .team-item:hover .team-icon a.share-link {
+    opacity: 1;
+}
+
+.team .team-item:hover .team-icon2 a.share-link {
     opacity: 1;
 }
 
@@ -694,7 +710,6 @@ h6,
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 1));
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
