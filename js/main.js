@@ -27,6 +27,46 @@ imageModal.addEventListener('show.bs.modal', function (event) {
   var modalImg = imageModal.querySelector('#imagePreview');
   modalImg.src = imgSource;
 });
+
+// Ir arriba
+$(document).ready(function(){
+
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		},300 );
+	});
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 0){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		};
+	});
+	
+});
+
+// acordeon
+const questions = document.querySelectorAll(".question");
+
+questions.forEach((question) => {
+  const btn = question.querySelector(".question-btn");
+
+  btn.addEventListener("click", () => {
+    //console.log(question);
+    questions.forEach((item) => {
+      if (item !== question) {
+        item.classList.remove("show-text");
+        //console.log(item);
+      }
+    });
+
+    question.classList.toggle("show-text");
+
+    //console.log(question);
+  });
+});
     
     
    // Back to top button
