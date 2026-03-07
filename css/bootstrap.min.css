@@ -12649,3 +12649,7 @@ fieldset:disabled .btn {
     left: 100%;
     margin-top: -5px;
 }
+
+.disabled {
+    pointer-events: none;
+}
