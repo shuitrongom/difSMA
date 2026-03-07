@@ -7189,6 +7189,12 @@
                     alert('Las capturas de pantalla están deshabilitadas en esta sección.');
                 }
             });
+            // Añadir un listener para el evento de captura de pantalla (detectado en algunos navegadores móviles)
+            document.addEventListener("keyup", function (e) {
+                if (e.key === "PrintScreen") {
+                    alert("Captura de pantalla no permitida en esta sección.");
+                }
+            });
 
         });
 
@@ -7198,8 +7204,21 @@
             document.getElementById('pdfViewer').src = "";
         });
 
+pdfModal.addEventListener('shown.bs.modal', function () {
+    console.log("Modal abierto - Protegiendo datos");
+    alert("Captura de pantalla no permitida en esta sección.");
+});
+
     </script>
 
+<style>
+/* CSS: Dificultar la lectura en caso de captura */
+.sensitive-content {
+    -webkit-user-select: none;  /* Chrome/Safari */
+    user-select: none;
+    filter: blur(0px); /* Puedes difuminar el fondo si es necesario */
+}
+</style>
     <script language="Javascript">
         clabHack = 0;
         document.oncontextmenu = function () { return false }
