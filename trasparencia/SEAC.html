@@ -7148,7 +7148,7 @@
     <script src="../lib/waypoints/waypoints.min.js"></script>
     <script src="../lib/lightbox/js/lightbox.min.js"></script>
     <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script type="text/javascript" src="../js/noprint.js"></script>
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
     <script>
@@ -7166,36 +7166,24 @@
             const pdfFile = button.getAttribute('data-pdf'); // Ruta del PDF
             const pdfViewer = document.getElementById('pdfViewer');
             pdfViewer.src = pdfFile;
-            window.addEventListener('keydown', function (e) {
-                if ((e.ctrlKey || e.metaKey || e.imp_pntKey) && (e.key === 's' || e.key === 'S' || e.key === 'p' || e.key === 'P')) {
-                    e.preventDefault();
-                    alert('Si deseas Obtener informacion Solicitar a Trasparencia DIF');
-                }
-                // Bloquear Impr Pant
-                if (e.keyCode === 44) {
-                    alert("La captura de pantalla está deshabilitada en este sitio.");
-                    return false;
-                }
-                // Bloquear Ctrl+P (Imprimir)
-                if (e.ctrlKey && e.keyCode === 80) {
-                    alert("La impresión está deshabilitada.");
-                    e.cancelBubble = true;
-                    e.preventDefault();
-                    e.stopImmediatePropagation();
-                }
-                // Detectar Impr Pant (Print Screen)
-                if (e.key === 'PrintScreen') {
-                    navigator.clipboard.writeText(''); // Limpiar portapapeles
-                    alert('Las capturas de pantalla están deshabilitadas en esta sección.');
+            pdfViewer.addEventListener('contextmenu', function (e) {
+                e.preventDefault(); // Previene el menú contextual
+            }, false);
+            // Aplicar estilos para inhabilitar la selección de texto
+            pdfViewer.style.webkitUserSelect = 'none'; // Safari
+            pdfViewer.style.mozUserSelect = 'none';    // Firefox
+            pdfViewer.style.msUserSelect = 'none';     // IE/Edge
+            pdfViewer.style.userSelect = 'none';       // Estándar
+            window.addEventListener("keyup", function (e) {
+                if (e.keyCode === 44) { // keyCode 44 es Print Screen
+                    // Intento de limpiar portapapeles (poco efectivo en navegadores modernos)
+                    navigator.clipboard.writeText('');
+                    alert('La captura de pantalla está deshabilitada. Si realizas la captura de dicho documento, tendras sanciones');
                 }
             });
-            // Añadir un listener para el evento de captura de pantalla (detectado en algunos navegadores móviles)
-            document.addEventListener("keyup", function (e) {
-                if (e.key === "PrintScreen") {
-                    alert("Captura de pantalla no permitida en esta sección.");
-                }
-            });
-
+            pdfViewer.addEventListener('pagePrinted', function (e) {
+                e.preventDefault(); // Previene el menú contextual
+            }, false);
         });
 
 
@@ -7203,41 +7191,13 @@
         pdfModal.addEventListener('hidden.bs.modal', function () {
             document.getElementById('pdfViewer').src = "";
         });
-
-pdfModal.addEventListener('shown.bs.modal', function () {
-    console.log("Modal abierto - Protegiendo datos");
-    alert("Captura de pantalla no permitida en esta sección.");
-});
-
+        document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
-
-<style>
-/* CSS: Dificultar la lectura en caso de captura */
-.sensitive-content {
-    -webkit-user-select: none;  /* Chrome/Safari */
-    user-select: none;
-    filter: blur(0px); /* Puedes difuminar el fondo si es necesario */
-}
-</style>
-    <script language="Javascript">
-        clabHack = 0;
-        document.oncontextmenu = function () { return false }
-        function right(e) {
-            if (navigator.appName == 'Netscape') {
-                if (e.which == 3 || e.which == 2) {
-                    alert("Aqui no puedes utilizar el botón derecho del mouse...");
-                    return false;
-                }
-            }
-            if (navigator.appName == 'Microsoft Internet Explorer') {
-                if (event.button == 2 || event.button == 3) {
-                    alert("Aqui no puedes utilizar el botón derecho del mouse...");
-                    return false;
-                }
-            } return true;
-        } document.onmousedown = right;
-        if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-        window.onmousedown = right;
+    <script language="javascript">
+        var noPrint = true;
+        var noCopy = true;
+        var noScreenshot = true;
+        var autoBlur = true;
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

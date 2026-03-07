@@ -12653,3 +12653,7 @@ fieldset:disabled .btn {
 .disabled {
     pointer-events: none;
 }
+
+#pdfViewer {
+    pointer-events: none;
+}
