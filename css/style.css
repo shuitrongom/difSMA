@@ -393,7 +393,7 @@ border: 2px;
 
 /*** service Start ***/
 .service {
-    background: linear-gradient(rgba(219, 200, 206, 0.356), rgba(201, 201, 201, 0.733));
+    background: linear-gradient(rgba(238, 236, 236, 0.89), rgb(255, 255, 255));
 }
 
 .service .service-item {
