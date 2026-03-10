@@ -3121,6 +3121,25 @@ textarea.form-control.is-invalid {
     user-select: none;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0);
+    padding: 1.375rem 3.0rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn-up {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #70747f;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     padding: .375rem .75rem;
     font-size: 1rem;
     border-radius: 10px;
@@ -3467,14 +3486,14 @@ fieldset:disabled .btn {
 
 .btn-dark {
     color: #fff;
-    background-color: #393d72;
-    border-color: #393d72
+    background-color: #797777;
+    border-color: #797777
 }
 
 .btn-dark:hover {
     color: #fff;
-    background-color: #303461;
-    border-color: #2e315b
+    background-color: #88888a;
+    border-color: #88888a
 }
 
 .btn-check:focus+.btn-dark,
@@ -8516,6 +8535,10 @@ fieldset:disabled .btn {
 
 .bg-green {
     background-color: #6c757d !important
+}
+
+.bg-gray {
+    background-color: #797777 !important
 }
 
 .bg-secondary {
