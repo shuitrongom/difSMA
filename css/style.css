@@ -128,7 +128,7 @@ h6,
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-secondary);
+    background: var(--bs-gray);
     color: var(--bs-primary);
 }
 
@@ -144,6 +144,11 @@ h6,
     border-radius: 10% 30%;
 }
 
+.title-border{
+border-radius: 60px;
+border: 2px;
+
+}
 /*** Button End ***/
 
 
@@ -183,7 +188,7 @@ h6,
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
-.navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link .nav-link-green {
     padding: 10px 12px;
     font-size: 16px;
     font-weight: 600;
@@ -229,7 +234,7 @@ h6,
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--bs-light) !important;
+    background: #e2e2e2d3 !important;
     border-radius: 10px !important;
     transition: .5s;
     opacity: 1;
@@ -388,7 +393,7 @@ h6,
 
 /*** service Start ***/
 .service {
-    background: linear-gradient(rgba(255, 72, 128, 0.05), rgba(255, 72, 128, 0.2));
+    background: linear-gradient(rgba(219, 200, 206, 0.356), rgba(201, 201, 201, 0.733));
 }
 
 .service .service-item {
@@ -755,5 +760,54 @@ h6,
     .footer-item a.text-body:hover {
         color: var(--bs-secondary) !important;
     }
+
+    /* Contenedor del carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Imágenes del carrusel */
+.carousel img {
+    width: 100%;
+    display: block;
+}
+
+/* Encabezado del carrusel */
+.carousel-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Animación opcional de entrada */
+.carousel-header {
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
 
     /*** Footer End ***/
