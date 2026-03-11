@@ -663,7 +663,7 @@ h6,
 }
 
 .team .team-item:hover .team-content h4 {
-    color: var(--bs-white) !important;
+    color: var(--bs-gray-dark) !important;
 }
 
 .team .team-item:hover .team-content h5 {
