@@ -144,11 +144,12 @@ h6,
     border-radius: 10% 30%;
 }
 
-.title-border{
-border-radius: 60px;
-border: 2px;
+.title-border {
+    border-radius: 60px;
+    border: 2px;
 
 }
+
 /*** Button End ***/
 
 
@@ -762,52 +763,71 @@ border: 2px;
     }
 
     /* Contenedor del carrusel */
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Imágenes del carrusel */
-.carousel img {
-    width: 100%;
-    display: block;
-}
-
-/* Encabezado del carrusel */
-.carousel-header {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    max-width: 90%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-/* Animación opcional de entrada */
-.carousel-header {
-    animation: fadeInDown 1s ease-out;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -20px);
+    .carousel {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
     }
-    to {
-        opacity: 1;
-        transform: translate(-50%, 0);
+
+    /* Imágenes del carrusel */
+    .carousel img {
+        width: 100%;
+        display: block;
     }
-}
+
+    /* Encabezado del carrusel */
+    .carousel-header {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        /* Fondo semitransparente */
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        max-width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Animación opcional de entrada */
+    .carousel-header {
+        animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    /* Contenedor de la pleca */
+    .pleca {
+        width: 100%;              /* Ocupar todo el ancho disponible */
+        max-width: 1200px;        /* Ancho máximo opcional */
+        margin: 0 auto;           /* Centrar horizontalmente */
+        overflow: hidden;         /* Evitar desbordes */
+        border-radius: 8px;       /* Bordes redondeados opcionales */
+    }
+
+    /* Imagen responsiva */
+    .pleca img {
+        width: 100%;              /* Escalar al ancho del contenedor */
+        height: auto;             /* Mantener proporción */
+        display: block;           /* Eliminar espacios en blanco */
+        object-fit: cover;        /* Ajustar recortando si es necesario */
+    }
 
 
     /*** Footer End ***/

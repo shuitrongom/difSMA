@@ -615,7 +615,12 @@ progress {
     max-width: auto;
     height: auto;
     align-items: center
+}
 
+.img-fluid-traspa {
+    max-width: 60%;
+    height: auto;
+    align-items: center;
 }
 
 .img-thumbnail {
@@ -656,7 +661,7 @@ progress {
     text-align: center
 }
 
-.container img{    
+.container img {
     align-items: center
 }
 
@@ -4417,7 +4422,7 @@ fieldset:disabled .btn {
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    color: #ff4880;
+    color: #727070;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4480,6 +4485,7 @@ fieldset:disabled .btn {
     background-color: rgb(29, 92, 226);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
+
 .nav-link-blue-light {
     width: auto;
     display: block;
@@ -4623,7 +4629,7 @@ fieldset:disabled .btn {
     list-style: none
 }
 
-.navbar-nav .nav-link .nav-link-green{
+.navbar-nav .nav-link .nav-link-green {
     padding-right: 0;
     padding-left: 0
 }
@@ -8426,6 +8432,11 @@ fieldset:disabled .btn {
 
 .text-start {
     text-align: left !important
+}
+
+.text-start-floter {
+    text-align: left !important;
+    color: #000000;
 }
 
 .text-end {
@@ -12768,4 +12779,29 @@ fieldset:disabled .btn {
 
 #pdfViewer {
     pointer-events: none;
+}
+
+/* Contenedor de la pleca */
+.pleca {
+    width: 100%;
+    /* Ocupar todo el ancho disponible */
+    /* Ancho máximo opcional */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    overflow: hidden;
+    /* Evitar desbordes */
+    border-radius: 8px;
+    /* Bordes redondeados opcionales */
+}
+
+/* Imagen responsiva */
+.pleca img {
+    width: 100%;
+    /* Escalar al ancho del contenedor */
+    height: auto;
+    /* Mantener proporción */
+    display: block;
+    /* Eliminar espacios en blanco */
+    object-fit: cover;
+    /* Ajustar recortando si es necesario */
 }
