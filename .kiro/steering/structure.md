@@ -184,6 +184,7 @@ All HTML pages follow a consistent structure:
 - Navigation menus
 - Program accordions
 - Nested content sections
+- Dropdown hover/focus state: white text (`#ffffff`) on dark gray background (`#555555`) — overridden directly in `css/bootstrap.min.css` to match the site's dark navbar theme (Bootstrap default was dark text on light gray `#e9ecef`)
 
 ## Asset Organization
 

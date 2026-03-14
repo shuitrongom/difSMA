@@ -10,7 +10,7 @@
 ## Frontend Libraries & Frameworks
 
 ### CSS Libraries
-- **Bootstrap 5.0.0**: Main CSS framework (`css/bootstrap.min.css`)
+- **Bootstrap 5.0.0**: Main CSS framework (`css/bootstrap.min.css`) — **note: this file has been directly modified** to customize dropdown hover/focus colors (white text on `#555555` instead of Bootstrap's default dark text on `#e9ecef`). Do not replace this file with a clean Bootstrap build without reapplying that patch.
 - **Animate.css**: Animation library (`lib/animate/animate.min.css`)
 - **Owl Carousel**: Carousel component styles (`lib/owlcarousel/assets/owl.carousel.min.css`)
 - **Lightbox**: Image gallery lightbox (`lib/lightbox/css/lightbox.min.css`)

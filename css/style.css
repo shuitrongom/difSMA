@@ -233,6 +233,16 @@ h6,
     color: var(--bs-white);
 }
 
+/* Navbar dropdown items — blancos */
+.navbar .dropdown-menu .dropdown-item {
+    color: #fff !important;
+}
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    color: #fff !important;
+    background: rgb(146, 146, 144) !important;
+}
+
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
