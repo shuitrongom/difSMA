@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "name": "Sync Docs on Source Change",
+  "description": "When HTML, CSS, or JavaScript source files are edited, ask the agent to update the README or any docs in the .kiro/steering folder to reflect the changes",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.html",
+      "css/*.css",
+      "js/*.js",
+      "acerca del dif/*.html",
+      "comunicacion social/*.html",
+      "tramites y servicios/*.html",
+      "trasparencia/*.html"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A source file was just edited. Review the changes and update the documentation accordingly. If there is a README.md in the project root, update it to reflect any structural or functional changes. If the changes affect project structure, navigation, components, or technology usage, also update the relevant steering files in .kiro/steering/ (structure.md, tech.md, or product.md). Only update docs if the changes are meaningful enough to warrant documentation updates."
+  },
+  "workspaceFolderName": "DIF-SMA",
+  "shortName": "docs-sync-on-change"
+}

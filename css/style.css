@@ -187,6 +187,7 @@ h6,
 /*** Navbar Start ***/
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
+    color: #FFFFFF;
 }
 
 .navbar .navbar-nav .nav-link .nav-link-green {
@@ -228,17 +229,19 @@ h6,
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-light);
-    color: var(--bs-primary);
+    background: rgb(146, 146, 144) !important;
+    color: var(--bs-white);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: #e2e2e2d3 !important;
+    background: rgb(133, 133, 119) !important;
     border-radius: 10px !important;
     transition: .5s;
     opacity: 1;
+    color: var(--bs-white) !important;
+    transform: scale(1.07);
 }
 
 #searchModal .modal-content {
@@ -394,7 +397,7 @@ h6,
 
 /*** service Start ***/
 .service {
-    background: linear-gradient(rgba(241, 239, 239, 0.89), rgb(255, 255, 255));
+    background: rgb(240, 239, 238);
 }
 
 .service .service-item {
@@ -465,7 +468,7 @@ h6,
 
 /*** Programs Start ***/
 .program {
-    background: linear-gradient(rgba(255, 72, 128, 0.1), rgba(255, 72, 128, 0.1));
+    background: rgb(255, 255, 255);
 }
 
 .program .program-item .program-img .program-rate {
@@ -814,19 +817,28 @@ h6,
 
     /* Contenedor de la pleca */
     .pleca {
-        width: 100%;              /* Ocupar todo el ancho disponible */
-        max-width: 1200px;        /* Ancho máximo opcional */
-        margin: 0 auto;           /* Centrar horizontalmente */
-        overflow: hidden;         /* Evitar desbordes */
-        border-radius: 8px;       /* Bordes redondeados opcionales */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        max-width: 1200px;
+        /* Ancho máximo opcional */
+        margin: 0 auto;
+        /* Centrar horizontalmente */
+        overflow: hidden;
+        /* Evitar desbordes */
+        border-radius: 8px;
+        /* Bordes redondeados opcionales */
     }
 
     /* Imagen responsiva */
     .pleca img {
-        width: 100%;              /* Escalar al ancho del contenedor */
-        height: auto;             /* Mantener proporción */
-        display: block;           /* Eliminar espacios en blanco */
-        object-fit: cover;        /* Ajustar recortando si es necesario */
+        width: 100%;
+        /* Escalar al ancho del contenedor */
+        height: auto;
+        /* Mantener proporción */
+        display: block;
+        /* Eliminar espacios en blanco */
+        object-fit: cover;
+        /* Ajustar recortando si es necesario */
     }
 
 

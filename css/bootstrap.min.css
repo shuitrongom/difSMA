@@ -623,6 +623,13 @@ progress {
     align-items: center;
 }
 
+.img-fluid-unidos {
+    max-width: 20%;
+    height: auto;
+    align-items: center;
+}
+
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -3504,8 +3511,8 @@ fieldset:disabled .btn {
 .btn-check:focus+.btn-dark,
 .btn-dark:focus {
     color: #fff;
-    background-color: #303461;
-    border-color: #2e315b;
+    background-color: #62636b;
+    border-color: #62636b;
     box-shadow: 0 0 0 .25rem rgba(87, 90, 135, .5)
 }
 
@@ -3947,10 +3954,10 @@ fieldset:disabled .btn {
     padding: .5rem 0;
     margin: 0;
     font-size: 1rem;
-    color: #4d4e52;
+    color: #ffffff;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #504b4b;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 10px
@@ -4215,7 +4222,7 @@ fieldset:disabled .btn {
     padding: .25rem 1rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #ffffff;
     text-align: inherit;
     white-space: nowrap;
     background-color: rgba(0, 0, 0, 0);
@@ -4430,7 +4437,7 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     background-color: rgba(5, 177, 5, 0.637);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
@@ -4440,9 +4447,9 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    background-color: rgb(230, 10, 10);
+    background-color: rgb(200, 16, 44);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4450,9 +4457,9 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    background-color: rgb(219, 206, 26);
+    background-color: rgb(243, 216, 62);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4460,9 +4467,9 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    background-color: rgb(243, 53, 158);
+    background-color: rgb(192, 30, 127);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4470,9 +4477,9 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    background-color: rgb(173, 47, 223);
+    background-color: rgb(134, 33, 146);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4480,9 +4487,9 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    background-color: rgb(29, 92, 226);
+    background-color: rgb(39, 112, 202);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4490,7 +4497,7 @@ fieldset:disabled .btn {
     width: auto;
     display: block;
     padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     background-color: rgb(29, 196, 226);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out

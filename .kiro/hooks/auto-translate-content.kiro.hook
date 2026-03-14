@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Auto-Translate Content Changes",
+  "description": "When HTML files are edited, identifies new or modified user-facing text and generates translations for configured target languages, maintaining context and locale-specific conventions.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.html",
+      "**/*.html"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "An HTML file with user-facing content was just edited. Review the changes and:\n1. Identify any new or modified user-facing text (headings, paragraphs, labels, button text, alt attributes, titles, etc.)\n2. The primary language of this site is Spanish (es-MX).\n3. Generate translations for the following target languages: English (en-US).\n4. Present the translations clearly, grouped by element/section, maintaining the original meaning and context.\n5. Flag any text that may require locale-specific adaptation (dates, addresses, formal titles, government terminology).\nDo not translate navigation structure or code — only visible user-facing content."
+  }
+}
