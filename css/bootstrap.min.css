@@ -8579,6 +8579,10 @@ fieldset:disabled .btn {
     background-color: #dc3545 !important
 }
 
+.bg-danger-flotter {
+    background-color: rgb(200, 16, 44) !important
+}
+
 .bg-light {
     background-color: #ffecf2 !important
 }
